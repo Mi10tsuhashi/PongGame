@@ -15,7 +15,7 @@ endif()
 # SDL2
 find_package(SDL2 CONFIG REQUIRED)
 
-# src/hoge配下のcppを再帰的に収集
+# src/game配下のcppを収集
 file(GLOB_RECURSE GAME_SOURCES src/game/*.cpp)
 # ソースファイル
 set(SOURCES

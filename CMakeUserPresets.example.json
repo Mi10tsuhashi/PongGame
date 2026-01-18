@@ -1,0 +1,53 @@
+{
+    "$schema": "https://cmake.org/cmake/help/latest/_downloads/3e2d73bff478d88a7de0de736ba5e361/schema.json",
+    "version": 10,
+    "configurePresets": [
+        {
+            "name": "default",
+            "inherits": "vcpkg",
+            "environment": {
+                "VCPKG_ROOT": "C:\\Path\\To\\Your\\vcpkg"
+            }
+        },
+        {
+            "name": "debug",
+            "inherits": "vcpkg",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            },
+            "environment": {
+                "VCPKG_ROOT": "C:\\Path\\To\\Your\\vcpkg"
+            }
+        },
+        {
+            "name": "release",
+            "inherits": "vcpkg",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            },
+            "environment": {
+                "VCPKG_ROOT": "C:\\Path\\To\\Your\\vcpkg"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "description": "",
+            "displayName": "",
+            "configurePreset": "default"
+        },
+        {
+            "name": "debug",
+            "description": "Debug build",
+            "displayName": "Debug",
+            "configurePreset": "debug"
+        },
+        {
+            "name": "release",
+            "description": "Release build",
+            "displayName": "Release",
+            "configurePreset": "release"
+        }
+    ]
+}

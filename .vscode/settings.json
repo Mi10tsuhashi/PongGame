@@ -1,0 +1,6 @@
+{
+    "cmake.buildEnvironment": {
+        "MSBUILDLOGENCODING": "UTF-8"
+    },
+    "cmake.outputLogEncoding": "utf-8"
+}

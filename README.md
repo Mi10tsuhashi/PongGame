@@ -1,5 +1,7 @@
 # PongGame
 
+https://qiita.com/Mi10tsuhashi/items/2bd844f74b3944e54774
+
 vcpkg, CMake, VSCode, MSbuild構成のサンプルプロジェクトです。
 SDL2 を使用した簡単な Pong ゲームを実装しています。
 ゲーム部分は[ゲームプログラミング C++](https://www.amazon.co.jp/dp/4798157619)の第一章を少し改変したものです。
